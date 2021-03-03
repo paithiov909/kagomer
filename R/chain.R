@@ -46,8 +46,11 @@ kick <- function(request,
   response <- async::synchronise(request())
   response$token <- dplyr::mutate(
     response$token,
-    dplyr::across(where(is.list),
-                  ~ paste0(purrr::flatten(.), collapse = ",")))
+    dplyr::across(
+      where(is.list),
+      ~ paste0(purrr::flatten(.), collapse = ",")
+    )
+  )
   result <- dplyr::select(response$token, {{ keep }})
   if (.Platform$pkgType != "win.binary" && !.skip_enc_reset) {
     return(result)
