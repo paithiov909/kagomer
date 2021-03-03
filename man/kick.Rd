@@ -15,7 +15,7 @@ kick(
 
 \item{.skip_enc_reset}{Logical. If true, leaves encoding of results as the environment native.}
 
-\item{request}{An asynchronous function to be kicked.}
+\item{request}{List that comes out from \code{queue}.}
 }
 \value{
 data.frame.
