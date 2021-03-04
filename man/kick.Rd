@@ -13,7 +13,7 @@ kick(
 \arguments{
 \item{keep}{Column names to keep in the results.}
 
-\item{.skip_enc_reset}{Logical. If true, leaves encoding of results as the environment native.}
+\item{.skip_enc_reset}{Logical. If true, leaves encoding of results as environment native.}
 
 \item{request}{List that comes out from \code{queue}.}
 }

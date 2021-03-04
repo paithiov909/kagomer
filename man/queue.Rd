@@ -2,7 +2,7 @@
 % Please edit documentation in R/chains.R
 \name{queue}
 \alias{queue}
-\title{Creates an asynchronous request}
+\title{Creates asynchronous requests}
 \usage{
 queue(params, url = "http://localhost:6060/tokenize")
 }
@@ -12,8 +12,8 @@ queue(params, url = "http://localhost:6060/tokenize")
 \item{url}{An URL of Kagome server API.}
 }
 \value{
-returns a list of json string and asynchronous function.
+returns a list of json strings and asynchronous function.
 }
 \description{
-Creates an asynchronous request
+Creates asynchronous requests
 }

@@ -2,6 +2,7 @@
 
 export("%>%")
 export(kick)
+export(ping)
 export(queue)
 export(serialize)
 import(async)

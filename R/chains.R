@@ -2,7 +2,7 @@
 #' @param sentence Character to be analyzed.
 #' @param mode One of `normal`, `search` or `extended`.
 #' @param dict One of `ipa` (the IPA-dic) or `uni` (the Uni-dic).
-#' @return returns a json string.
+#' @return returns a list of json strings.
 #' @export
 serialize <- function(sentences,
                       mode = c("normal", "search", "extended"),
@@ -22,10 +22,10 @@ serialize <- function(sentences,
 }
 
 
-#' Creates an asynchronous request
+#' Creates asynchronous requests
 #' @param params List of json string.
 #' @param url An URL of Kagome server API.
-#' @return returns a list of json string and asynchronous function.
+#' @return returns a list of json strings and asynchronous function.
 #' @export
 queue <- function(params, url = "http://localhost:6060/tokenize") {
   promise <- async::async(function(param) {
@@ -46,7 +46,7 @@ queue <- function(params, url = "http://localhost:6060/tokenize") {
 #' Kicks requests
 #' @param request List that comes out from \code{queue}.
 #' @param keep Column names to keep in the results.
-#' @param .skip_enc_reset Logical. If true, leaves encoding of results as the environment native.
+#' @param .skip_enc_reset Logical. If true, leaves encoding of results as environment native.
 #' @return data.frame.
 #' @export
 kick <- function(requests,

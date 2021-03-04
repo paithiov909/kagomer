@@ -7,10 +7,10 @@
 ping(url = "http://localhost:6060")
 }
 \arguments{
-\item{url}{URL stirng}
+\item{url}{URL stirng.}
 }
 \value{
-returns the status code of request invisibly.
+returns the status code of response invisibly.
 }
 \description{
 Sends a HEAD request to Kagome server

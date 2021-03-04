@@ -18,7 +18,7 @@ serialize(
 \item{sentence}{Character to be analyzed.}
 }
 \value{
-returns a json string.
+returns a list of json strings.
 }
 \description{
 Creates json data
