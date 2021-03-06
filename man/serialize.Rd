@@ -11,11 +11,11 @@ serialize(
 )
 }
 \arguments{
+\item{sentences}{Character to be analyzed.}
+
 \item{mode}{One of `normal`, `search` or `extended`.}
 
 \item{dict}{One of `ipa` (the IPA-dic) or `uni` (the Uni-dic).}
-
-\item{sentence}{Character to be analyzed.}
 }
 \value{
 returns a list of json strings.

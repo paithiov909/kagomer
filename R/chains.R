@@ -1,5 +1,5 @@
 #' Creates json data
-#' @param sentence Character to be analyzed.
+#' @param sentences Character to be analyzed.
 #' @param mode One of `normal`, `search` or `extended`.
 #' @param dict One of `ipa` (the IPA-dic) or `uni` (the Uni-dic).
 #' @return returns a list of json strings.
