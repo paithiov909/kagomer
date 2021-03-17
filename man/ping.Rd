@@ -2,7 +2,7 @@
 % Please edit documentation in R/ping.R
 \name{ping}
 \alias{ping}
-\title{Sends a HEAD request to Kagome server}
+\title{Send a HEAD request to Kagome server}
 \usage{
 ping(url = "http://localhost:6060")
 }
@@ -10,8 +10,8 @@ ping(url = "http://localhost:6060")
 \item{url}{URL stirng.}
 }
 \value{
-returns the status code of response invisibly.
+the status code of response is returned invisibly.
 }
 \description{
-Sends a HEAD request to Kagome server
+Send a HEAD request to Kagome server
 }

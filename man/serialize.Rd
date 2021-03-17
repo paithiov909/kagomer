@@ -2,7 +2,7 @@
 % Please edit documentation in R/chains.R
 \name{serialize}
 \alias{serialize}
-\title{Creates json data}
+\title{Create json data}
 \usage{
 serialize(
   sentences,
@@ -18,8 +18,8 @@ serialize(
 \item{dict}{One of `ipa` (the IPA-dic) or `uni` (the Uni-dic).}
 }
 \value{
-returns a list of json strings.
+a list of json strings.
 }
 \description{
-Creates json data
+Create json data
 }

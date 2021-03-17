@@ -1,14 +1,14 @@
-#' Creates json data
+#' Create json data
 #' @param sentences Character to be analyzed.
 #' @param mode One of `normal`, `search` or `extended`.
 #' @param dict One of `ipa` (the IPA-dic) or `uni` (the Uni-dic).
-#' @return returns a list of json strings.
+#' @return a list of json strings.
 #' @export
 serialize <- function(sentences,
                       mode = c("normal", "search", "extended"),
                       dict = c("ipa", "uni")) {
-  mode <- match.arg(mode)
-  dict <- match.arg(dict)
+  mode <- rlang::arg_match(mode)
+  dict <- rlang::arg_match(dict)
   params <- lapply(sentences, function(sentence) {
     list(
       sentence = stringi::stri_enc_toutf8(sentence),
@@ -22,10 +22,10 @@ serialize <- function(sentences,
 }
 
 
-#' Creates asynchronous requests
+#' Create asynchronous requests
 #' @param params List of json string.
-#' @param url An URL of Kagome server API.
-#' @return returns a list of json strings and asynchronous function.
+#' @param url An URL of Kagome server.
+#' @return a list of json strings and asynchronous function.
 #' @export
 queue <- function(params, url = "http://localhost:6060/tokenize") {
   promise <- async::async(function(param) {
@@ -43,7 +43,7 @@ queue <- function(params, url = "http://localhost:6060/tokenize") {
 }
 
 
-#' Kicks requests
+#' Kick requests
 #' @param request List that comes out from \code{queue}.
 #' @param keep Column names to keep in the results.
 #' @param .skip_enc_reset Logical. If true, leaves encoding of results as environment native.

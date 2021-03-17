@@ -2,7 +2,7 @@
 % Please edit documentation in R/chains.R
 \name{kick}
 \alias{kick}
-\title{Kicks requests}
+\title{Kick requests}
 \usage{
 kick(
   requests,
@@ -21,5 +21,5 @@ kick(
 data.frame.
 }
 \description{
-Kicks requests
+Kick requests
 }

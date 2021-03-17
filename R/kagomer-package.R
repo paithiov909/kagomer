@@ -6,6 +6,7 @@
 #' @import readr
 #' @import stringi
 #' @importFrom purrr imap_dfr
+#' @importFrom rlang arg_match
 ##
 #' @docType package
 #' @keywords internal

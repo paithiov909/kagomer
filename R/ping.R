@@ -1,6 +1,6 @@
-#' Sends a HEAD request to Kagome server
+#' Send a HEAD request to Kagome server
 #' @param url URL stirng.
-#' @return returns the status code of response invisibly.
+#' @return the status code of response is returned invisibly.
 #' @export
 ping <- function(url = "http://localhost:6060") {
   request <- async::async(function() {
