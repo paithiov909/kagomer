@@ -1,4 +1,3 @@
-
 # kagomer
 
 kagomer is an asynchronous HTTP client for the [Kagome](https://github.com/ikawaha/kagome) server command powered by [gaborcsardi/async](https://github.com/gaborcsardi/async).

@@ -11,11 +11,11 @@ kick(
 )
 }
 \arguments{
+\item{requests}{List that comes out from \code{queue}.}
+
 \item{keep}{Column names to keep in the results.}
 
 \item{.skip_enc_reset}{Logical. If true, leaves encoding of results as environment native.}
-
-\item{request}{List that comes out from \code{queue}.}
 }
 \value{
 data.frame.

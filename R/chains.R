@@ -44,7 +44,7 @@ queue <- function(params, url = "http://localhost:6060/tokenize") {
 
 
 #' Kick requests
-#' @param request List that comes out from \code{queue}.
+#' @param requests List that comes out from \code{queue}.
 #' @param keep Column names to keep in the results.
 #' @param .skip_enc_reset Logical. If true, leaves encoding of results as environment native.
 #' @return data.frame.

@@ -17,10 +17,10 @@ Imports:
     async,
     dplyr,
     jsonlite,
+    magrittr,
     purrr,
     readr,
-    stringi,
-    magrittr,
-    rlang
+    rlang,
+    stringi
 Remotes:
     gaborcsardi/async
