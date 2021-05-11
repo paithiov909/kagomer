@@ -2,11 +2,11 @@
 ##
 #' @import async
 #' @import dplyr
-#' @import jsonlite
-#' @import readr
-#' @import stringi
+#' @importFrom jsonlite fromJSON toJSON
 #' @importFrom purrr imap_dfr
+#' @importFrom readr read_lines
 #' @importFrom rlang arg_match
+#' @importFrom stringi stri_enc_toutf8
 ##
 #' @docType package
 #' @keywords internal
